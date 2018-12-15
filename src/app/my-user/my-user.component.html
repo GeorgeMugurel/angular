@@ -7,9 +7,11 @@
     </ul>
   </div>
 </div> -->
+<div *ngIf="loadingSpiner" class="loading"></div>
 
 <div class="users" *ngFor='let u of myUsers'>
   <app-child-user [user]="u" (declineUser)="deleteUser($event)" ></app-child-user>
 </div>
 
 <app-add-child (onAdd)="addUser($event)"></app-add-child>
+
