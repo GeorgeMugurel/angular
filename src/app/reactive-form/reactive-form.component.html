@@ -1,0 +1,25 @@
+<div class="container">
+  <form (ngSubmit)="formSubmit()" [formGroup]="carForm">
+    <div class="form-group">
+      <input class="form-control" formControlName="model" placeholder="Model..." type="text"/>
+    </div>
+    <div class="form-group">
+      <input class="form-control" formControlName="vin" placeholder="Type VIN for your car.."/>
+    </div>
+    <div class="form-group">
+      <input class="form-control" formControlName="year" placeholder="Car year.." type="number"/>
+    </div>
+    
+    <div class="form-group">
+      <select class="form-control" formControlName="engine" id="sel1">
+        <option *ngFor="let engine of engines">{{engine}}</option>
+      </select>
+    </div>
+
+    <div class="form-check">
+      <input class="form-check-input" formControlName="forSale" type="checkbox"/>
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button class="btn btn-primary" type="submit">Send</button>
+  </form>
+</div>

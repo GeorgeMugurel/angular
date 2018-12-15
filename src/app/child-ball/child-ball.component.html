@@ -1,0 +1,9 @@
+<div class="players">
+  <ul class="my-players">
+    <li>{{player.username}}</li>
+    <li>{{player.id}}</li>
+    <li>
+      <input type="checkbox" *ngFor="let ball of player.childBall" (click)="clickBall()"/>
+    </li>
+  </ul>
+</div>

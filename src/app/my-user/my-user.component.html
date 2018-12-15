@@ -1,0 +1,15 @@
+<!-- <div class="wrapper-users">
+  <div class="my-user">
+    <ul class="my-users">
+      <li>Name</li>
+      <li>Email</li>
+      <li><input type="checkbox" checked="checked" /></li>
+    </ul>
+  </div>
+</div> -->
+
+<div class="users" *ngFor='let u of myUsers'>
+  <app-child-user [user]="u" (declineUser)="deleteUser($event)" ></app-child-user>
+</div>
+
+<app-add-child (onAdd)="addUser($event)"></app-add-child>

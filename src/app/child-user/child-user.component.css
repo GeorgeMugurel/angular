@@ -1,19 +1,14 @@
-ul.menu {
+ul.my-users {
     list-style: none;
     margin: 0;
     padding: 0;
-    padding-bottom: 50px;
 }
 
-ul.menu li {
+ul.my-users li {
     display: inline-block;
     padding-right: 30px;
 }
 
-ul.menu li:last-of-type {
+ul.my-users li:last-of-type {
     padding-right: 0;
-}
-
-ul.menu li a {
-    text-decoration: none;
 }

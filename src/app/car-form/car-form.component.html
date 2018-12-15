@@ -1,0 +1,32 @@
+<div class="container">
+  <form #carForm="ngForm" (ngSubmit)="formSubmit()">
+    <div class="form-group">
+      <input class="form-control" type="text" [(ngModel)]="carModel.model" 
+      #model="ngModel" name="model" required/>
+      <div [hidden]="model.valid || model.pristine" class="alert alert-danger">
+        Model is required
+      </div>
+    </div>
+    <div class="form-group">
+      <input class="form-control" minlength="17" maxlength="17" 
+      type="text" [(ngModel)]="carModel.vin" #vin="ngModel" name="vin" required/>
+    </div>
+    <div class="form-group">
+      <input class="form-control" type="number" [(ngModel)]="carModel.year" #year="ngModel" name="year"/>
+    </div>
+    
+    <div class="form-group">
+        <select class="form-control" name="engine" id="sel1" 
+        #engine="ngModel" [(ngModel)]="carModel.engine" required>
+          <option *ngFor="let engine of engines">{{engine}}</option>
+        </select>
+    </div>
+
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" [(ngModel)]="carModel.forSale" 
+      #forSale="ngModel" name="forSale" required/>
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button class="btn btn-primary" type="submit" [disabled]="!carForm.valid">Send</button>
+  </form>
+</div>

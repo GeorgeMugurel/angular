@@ -1,0 +1,9 @@
+<div class="users">
+  <ul class="my-users">
+    <li>{{user.username}}</li>
+    <li>{{user.email}}</li>
+    <li><input type="checkbox" [(ngModel)]="user.userActive"/></li>
+    <li><button (click)="removeUser()">X</button></li>
+  </ul>
+</div>
+
