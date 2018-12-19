@@ -17,6 +17,8 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ObservableComponent } from './observable/observable.component';
 import {HttpModule} from '@angular/http';
 import { RestApiService } from './rest-api.service';
+import { CarFormAddComponent } from './car-form-add/car-form-add.component';
+import { CarFormEditComponent } from './car-form-edit/car-form-edit.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { RestApiService } from './rest-api.service';
     TicTacToeChildComponent,
     CarFormComponent,
     ReactiveFormComponent,
-    ObservableComponent
+    ObservableComponent,
+    CarFormAddComponent,
+    CarFormEditComponent
   ],
   imports: [
     BrowserModule,

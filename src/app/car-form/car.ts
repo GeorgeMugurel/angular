@@ -4,4 +4,5 @@ export class Car {
   vin: string;
   engine: string;
   forSale: boolean;
+  _id: string;
 }
