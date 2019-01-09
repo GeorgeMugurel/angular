@@ -19,6 +19,10 @@ import {HttpModule} from '@angular/http';
 import { RestApiService } from './rest-api.service';
 import { CarFormAddComponent } from './car-form-add/car-form-add.component';
 import { CarFormEditComponent } from './car-form-edit/car-form-edit.component';
+import { IncomeComponent } from './money-tracker/income/income.component';
+import { ExpenseComponent } from './money-tracker/expense/expense.component';
+import { TrackerComponent } from './money-tracker/tracker.component';
+import { RestApiTrackerComponent } from './money-tracker/rest-api-tracker/rest-api-tracker.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +39,10 @@ import { CarFormEditComponent } from './car-form-edit/car-form-edit.component';
     ReactiveFormComponent,
     ObservableComponent,
     CarFormAddComponent,
-    CarFormEditComponent
+    CarFormEditComponent,
+    IncomeComponent,
+    ExpenseComponent,
+    TrackerComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +52,8 @@ import { CarFormEditComponent } from './car-form-edit/car-form-edit.component';
     HttpModule
   ],
   providers: [
-    RestApiService
+    RestApiService,
+    RestApiTrackerComponent
   ],
   bootstrap: [AppComponent]
 })

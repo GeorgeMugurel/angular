@@ -17,9 +17,7 @@ export class CarFormComponent implements OnInit {
 
   engines = ['diesel', 'gasoline', 'GPL'];
 
-  constructor() {
-    
-}
+  constructor() {}
 
   formSubmit(){
     this.carModelOutput.emit(this.car);
