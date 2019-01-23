@@ -19,25 +19,6 @@ export class MyUserComponent implements OnInit {
     this.restApi = restApi;
 
     this.myUsers = [];
-
-    // var user1 = new User();
-    // user1.username = 'Andrei Popsescu';
-    // user1.email = 'AndreiPopescu@yahoo.com';
-    // user1.userActive = false;
-
-    // var user2 = new User();
-    // user2.username = 'Andrei Miron';
-    // user2.email = 'AndreiMiron@yahoo.com';
-    // user2.userActive = true;
-
-    // var user3 = new User();
-    // user3.username = 'Alexandru Ion';
-    // user3.email = 'AlexandruIon@yahoo.com';
-    // user3.userActive = true;
-
-    // this.myUsers.push(user1);
-    // this.myUsers.push(user2);
-    // this.myUsers.push(user3);
   }
 
   ngOnInit() { 

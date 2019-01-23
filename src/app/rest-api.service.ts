@@ -29,7 +29,6 @@ export class RestApiService {
     });
     return mapToUsers(this.http.get(this.url, {headers: this.headers}));
    }
-   
 
    saveUser(user:User): Observable<Response> {
     return this.http.post(this.url, user, {headers: this.headers});
